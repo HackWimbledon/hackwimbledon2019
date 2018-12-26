@@ -1,0 +1,11 @@
+{
+  "name": "hackwimbledon2019",
+  "version": "1.0.0",
+  "description": "2019 HackWimbledon Site and Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
