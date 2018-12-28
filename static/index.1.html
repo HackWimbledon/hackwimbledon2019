@@ -1,0 +1,240 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <!-- Favourite Icons and Manifests -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">  
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+          <a class="navbar-brand" href="#"><span class="brandname">HackWimbledon</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        
+        <main role="main" class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                  <h2>Next Event</h2>
+                  <div id="nextevent">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h2>Chatspaces</h2>
+                </div>
+                <div class="col-sm">
+                    <a class="twitter-timeline" href="https://twitter.com/HackWimbledon?ref_src=twsrc%5Etfw">Tweets by HackWimbledon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                
+              </div>
+        </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+    <script src="/js/main.js"/>
+  </body>
+</html>
+
+<!-- <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to HackWimbledon</h1>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  <div class="accordian">
+    <div class="card">
+      <div class="card-header" id="quickOne">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link"
+            data-toggle="collapse"
+            data-target="#collapseQuickOne"
+            aria-expanded="true"
+            aria-controls="collapseQuickOne"
+          >
+            Quick Links for HackWimbledon
+          </button>
+        </h5>
+      </div>
+      <div
+        id="collapseQuickOne"
+        class="collapse show"
+        aria-labelledby="headingOne"
+        data-parent="#accordion"
+      >
+        <div class="card-body">
+          <button class="button btn-primary btn-lg">Events</button>
+          <button class="button btn-primary btn-lg">Projects</button>
+          <button class="button btn-primary btn-lg">Resources</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="guideTwo">
+        <h4 class="mb-0">
+          <button
+            class="btn btn-link collapsed"
+            data-toggle="collapse"
+            data-target="#collapseGuideTwo"
+            aria-expanded="true"
+            aria-controls="collapseGuideTwo"
+          >
+            A Guide To HackWimbledon
+          </button>
+        </h4>
+      </div>
+      <div
+        id="collapseGuideTwo"
+        class="collapse"
+        aria-labelledby="guideTwo"
+        data-parent="#accordion"
+      >
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <h1>About HackWimbledon</h1>
+
+              <p>
+                They say the future is in the hands of the makers, the
+                creators. Hackers are the digital makers and creators and they
+                now have a whole range of new tools to build things with from
+                tiny electronics to minicomputers, from Raspberry Pis to
+                Arduinos and many others you won't have heard of.
+              </p>
+              <p>
+                They are all out there ready to be wired into whatever you
+                want them to be and programmed to make them do what you want
+                them to do. But where do you start if you want to make a
+                web-connected thermometer, a simple robot, an energy saving
+                light or a weather aware window?
+              </p>
+            </div>
+            <div class="col-md-auto">
+              <img
+                class="img-responsive center-block"
+                src="/img/hackws256transp.png"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                This is what
+                <span class="brandname">HackWimbledon</span> wants to
+                illuminate. <span class="brandname">HackWimbledon</span> meets
+                up every other Saturday @ Wimbletech, in MAE Wimbledon
+                "behind" Wimbledon library and 5 minutes from Wimbledon
+                station. Wimbletech is a home for startups and coworkers in
+                Merton and provides the space for
+                <span class="brandname">HackWimbledon</span>.
+              </p>
+              <p>
+                <span class="brandname">HackWimbledon</span> runs from 12pm to
+                6pm, every other Saturday - check the events page for exact
+                dates. If you want to take part, turn up. If you want to hack,
+                bring a laptop and anything else your project needs - we have
+                some tools and equipment if needed.
+              </p>
+              <p>
+                Our resident curator,
+                <a href="http://twitter.com/codepope">@codepope</a>, is always
+                on hand to show the various gadgets you can bend to your will.
+                We have some Arduino boards to play with and assistance to get
+                you going. Each meeting has a theme for new and experienced
+                hackers to work around, a curators corner with something
+                interesting being built or programmed and, of course, space
+                for you to work on your own project in a supportive and fun
+                environment.
+              </p>
+              <p>
+                <span class="brandname">HackWimbledon</span> aims to support
+                you and the hacking and creating community. So come along and
+                join in - you too can make, create and illuminate at
+                <span class="brandname">HackWimbledon</span>!
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                <span class="brandname">HackWimbledon</span> is all about
+                making, creating and sharing in a friendly environment and
+                we're dedicated to making it work so people never feel
+                uncomfortable, in whatever way, or unable to concentrate on
+                their projects.
+              </p>
+              <p>
+                That also means we want you to be working on your projects too
+                or actively working with others on a project. We'll be making
+                sure that this principle is maintained because it's what
+                <span class="brandname">HackWimbledon</span> is all about. If
+                there's a problem, please talk with the organiser.
+              </p>
+              <p>
+                We currently use Meetup to handle announcing events and
+                getting people to RSVP before hand.
+              </p>
+              <a href="http://meetup.com/hackwimbledon"
+                ><button class="button btn-primary btn-lg">
+                  Go to Meetup to sign up
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
